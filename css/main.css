@@ -1,27 +1,48 @@
 body{
-  background-color: steelblue;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1183181/bora-bora-french-polynesia-sunset-ocean.jpg");
-  background-repeat: no-repeat;
-  margin: auto;
-  background-size: 100%;
+  background-color: #2D87DB;
+  margin: none;
   space-after: 10px;
 }
 
+@media (min-width: 1560px) {
+	#rectangle { 
+		max-width: 40%;
+	}
+  body{
+    background-color: #BB6BD9;
+  }
+  
+}
+
+.container{
+  display: flex;
+}
+
+#rectangle{
+  background: #2D87DB;
+  width: 100,000px;
+  height: 200px;
+  top: -380px;
+  z-index: -1;
+  content-align: center;
+}
+
 h1 {
-  color: rgba(173,216,230, 1);
+  color: rgba(255,255,255, 0.8);
   text-align: left;
   font-family: Vidaloka;
   font-size: 4em;
   margin: 5%;
+  z-index: 0;
 }
 
 .me{ 
   border-radius: 50%;
   max-width: 25%;
-  margin-top: -10%;
-  left: 50%;
-  position: relative;
-  content-align: center;
+  left: 0;
+  top: 300px;
+  position: absolute;
+  content-align: left;
 }
 
 .The_Goddess_Test{
@@ -32,12 +53,24 @@ h1 {
 h3, p, li {
   font-family: Amiri;
   text-align: justify;
-  margin: 5%;
   color: white;
+  display: flex;
+  width: 400px;
+  
+}
+
+.blue-textbox{
+  display: flex;
+  width: 500px;
+  height: 100px;
+  background: #2D87DB;
+}
+
+.white-textbox{
+  
 }
 
 p{
-  margin: 50px;
   color: white;
 }
 
